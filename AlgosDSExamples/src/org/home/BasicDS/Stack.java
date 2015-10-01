@@ -5,17 +5,17 @@ import java.util.List;
 
 public class Stack {
 	
-	private List<Integer> elements = new ArrayList<Integer>();
+	private List<Object> elements = new ArrayList<Object>();
 	
-	public void push(int newElement){
+	public void push(Object newElement){
 		elements.add(newElement);
 	}
 	
-	public Integer pop(){
+	public Object pop(){
 		return elements.remove(elements.size()-1);
 	}
 	
-	public Integer peek(){
+	public Object peek(){
 		return elements.get(elements.size()-1);
 	}
 	

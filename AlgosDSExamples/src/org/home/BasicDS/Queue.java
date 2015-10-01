@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Queue {
 
-	private List<Integer> elements = new ArrayList<Integer>(5);
+	private List<Object> elements = new ArrayList<Object>(5);
 	
 	public void enQueue(int newElement){
 		elements.add(newElement);
 	}
 	
-	public Integer deQueue(){
+	public Object deQueue(){
 		return elements.remove(0);
 	}
 	
