@@ -7,6 +7,7 @@ public class GraphNode {
 	
 	private Set<GraphNode> graphNodes = new HashSet<GraphNode>();
 	private String value;
+	private boolean visited;
 	
 	public GraphNode(String value){
 		this.value = value;
@@ -22,6 +23,14 @@ public class GraphNode {
 	
 	public Set<GraphNode> getGraphNodes() {
 		return graphNodes;
+	}
+
+	public boolean isVisited() {
+		return visited;
+	}
+
+	public void setVisited(boolean visited) {
+		this.visited = visited;
 	}
 
 }

@@ -3,19 +3,19 @@ package org.home.BasicDS;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stack {
+public class Stack<E> {
 	
-	private List<Object> elements = new ArrayList<Object>();
+	private List<E> elements = new ArrayList<E>();
 	
-	public void push(Object newElement){
+	public void push(E newElement){
 		elements.add(newElement);
 	}
 	
-	public Object pop(){
+	public E pop(){
 		return elements.remove(elements.size()-1);
 	}
 	
-	public Object peek(){
+	public E peek(){
 		return elements.get(elements.size()-1);
 	}
 	

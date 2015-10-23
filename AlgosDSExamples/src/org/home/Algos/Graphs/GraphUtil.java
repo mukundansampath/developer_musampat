@@ -29,8 +29,8 @@ public class GraphUtil {
 		GraphNode h = new GraphNode("h");
 		
 		a.addNode(b);
-		a.addNode(g);
 		a.addNode(d);
+		a.addNode(g);
 		
 		b.addNode(a);
 		b.addNode(e);

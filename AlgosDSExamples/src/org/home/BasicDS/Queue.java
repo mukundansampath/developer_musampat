@@ -3,15 +3,15 @@ package org.home.BasicDS;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Queue {
+public class Queue<E> {
 
-	private List<Object> elements = new ArrayList<Object>(5);
+	private List<E> elements = new ArrayList<E>(5);
 	
-	public void enQueue(int newElement){
+	public void enQueue(E newElement){
 		elements.add(newElement);
 	}
 	
-	public Object deQueue(){
+	public E deQueue(){
 		return elements.remove(0);
 	}
 	
